@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Playfair+Display:wght@500;600&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --color-background: #FBFAF7;
+  --color-paper: #FFFEFD;
+  --color-ink: #171914;
+  --color-muted: #777771;
+  --color-tertiary: #92928D;
+  --color-line: #E9E5DC;
+  --color-gold: #A1844D;
+  --color-gold-dark: #806633;
+  --color-soft-gold: #F8F6F1;
+  --color-muted-red: #D85C55;
+
+  --font-serif: "Playfair Display", Georgia, serif;
+  --font-sans: "DM Sans", Inter, sans-serif;
+}
+
+:root {
+  --background: #FBFAF7;
+  --foreground: #171914;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans);
+  margin: 0;
+}
+
+@layer components {
+  .luxury-border {
+    @apply border-[#E9E5DC];
+  }
+
+  .gold-accent {
+    @apply text-[#A1844D];
+  }
+}
