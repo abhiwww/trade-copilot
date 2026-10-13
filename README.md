@@ -43,4 +43,8 @@ npm run dev
 ```
 
 Open `http://localhost:3000`. The frontend's local API URL is configured in
-`frontend\.env.local` as `NEXT_PUBLIC_API_URL=http://127.0.0.1:8000`.
+`frontend\.env.local`. Create that file with:
+
+```env
+NEXT_PUBLIC_API_URL=http://127.0.0.1:8000
+```
